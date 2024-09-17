@@ -9,25 +9,12 @@ package Two;
  * @author mchai
  */
 public class DemoKonversiSuhu {
-    private double nilai;
-    private KonversiSuhu converter1;
-    private KonversiSuhu2 converter2;
-
-    public DemoKonversiSuhu(double nilai) {
-        this.nilai = nilai;
-        this.converter1 = new KonversiSuhu();
-        this.converter2 = new KonversiSuhu2();
-    }
-
-    public void demo() {
-        System.out.println(this.nilai + "C to Fahrenheit: " + converter1.celciusToFahrenheit(this.nilai) + " F");
-        System.out.println(this.nilai + "C to Reamur: " + converter1.celciusToReamur(this.nilai) + " Re");
-        double fahrenheit = converter1.celciusToFahrenheit(this.nilai);
-        System.out.println(fahrenheit + "F to Reamur: " + converter2.fahrenheitToReamur(fahrenheit) + " Re");
-    }
-
     public static void main(String[] args) {
-        DemoKonversiSuhu DKS = new DemoKonversiSuhu(100);
-        DKS.demo();
+        KonversiSuhu2 konversi = new KonversiSuhu2();
+        double celcius = 100, fahrenheit = 212;
+
+        System.out.println(celcius + " Celcius ke Fahrenheit = " + konversi.celciusToFahrenheit(celcius));
+        System.out.println(celcius + " Celcius ke Reamur = " + konversi.celciusToReamur(celcius));
+        System.out.println(fahrenheit + " Fahrenheit ke Reamur = " + konversi.fahrenheitToReamur(fahrenheit));
     }
 }
