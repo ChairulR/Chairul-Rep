@@ -4,10 +4,6 @@
  */
 package com.mycompany.mavenproject2.pertemuan10;
 
-/**
- *
- * @author kukib
- */
 public class Mahasiswa {
 
     private String NIM, Nama, Alamat, matakuliah;
