@@ -5,7 +5,7 @@
 
 /**
  *
- * @author shinr
+ * @author mchai
  */
 public class kalkulator extends javax.swing.JFrame {
     String angka;
