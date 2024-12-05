@@ -3,10 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 
-/**
- *
- * @author shinr
- */
 public class kalkulator extends javax.swing.JFrame {
     String angka;
     double jumlah,bil1,bil2;
